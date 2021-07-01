@@ -1,7 +1,7 @@
 # hostDiscovery
 Descubrimiento de dispositivos en red
 
-Funcionamietno: 
+Funcionamiento: 
 
 Sin parámetros
   > En este caso sería apra trabajar con las IPs de HTB con el formato 10.10.10.X, variando el script en la X
