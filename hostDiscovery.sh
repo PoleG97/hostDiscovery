@@ -17,8 +17,7 @@ if [ $# -eq 0 ]; then
     done; wait
     
 #Si hay parámetros, tratamos cada uno de los parámetros como una de las 3 primeras partes de la IP: 192 168 0 X
-else
-    
+else 
     for j in $(seq 2 254); do
         timeout 1 bash -c "sudo ping -c 1 $1.$2.$3.$j > /dev/null 2>&1" && echo -e "${blueColour}Host $1.$2.$3.$j${endColour} \t - ${greenColour}ACTIVE${endColour}" &
     done; wait
